@@ -18,6 +18,8 @@ module.exports = {
       },
       fontFamily: {
         ITCAVANTGARDESTD: "ITCAVANTGARDESTD",
+        ITCAVANTGARDESTDThin: "ITCAVANTGARDESTDThin",
+        ITCAVANTGARDESTDBold: "ITCAVANTGARDESTDBold",
       },
     },
   },

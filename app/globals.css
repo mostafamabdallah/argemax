@@ -4,6 +4,20 @@
   src: url("../public/fonts/ITCAVANTGARDESTD-MD.TTF");
 }
 
+@font-face {
+  font-family: "ITCAVANTGARDESTDThin";
+  src: url("../public/fonts/ITCAVANTGARDESTD-BK.TTF");
+}
+
+@font-face {
+  font-family: "ITCAVANTGARDESTDBold";
+  src: url("../public/fonts/ITCAVANTGARDESTD-BOLD.TTF");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  @apply bg-gray-50
+}

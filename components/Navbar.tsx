@@ -10,7 +10,7 @@ const Navbar = (props: Props) => {
       <div className="logo md:w-[150px]">
         <img alt="argemax" className="w-full" src={logo.src}></img>
       </div>
-      <div className="flex w-6/12">
+      <div className="flex w-fit ">
         <ul className="w-full flex gap-2 justify-end items-center">
           <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
             <Link href={""}>HOME</Link>
@@ -19,10 +19,10 @@ const Navbar = (props: Props) => {
             <Link href={""}>PRODUCTS</Link>
           </li>
           <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-            <Link href={""}>ABOUT xUS</Link>
+            <Link href={""}>ABOUT US</Link>
           </li>
           <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-            <Link href={""}>ABOUT US</Link>
+            <Link href={""}>CONTACT US</Link>
           </li>
         </ul>
       </div>
