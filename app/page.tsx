@@ -1,16 +1,6 @@
 "use client";
 import MainBanner from "@/components/MainBanner";
 import landscape from "../public/Home/Vision-&-Mission.jpg";
-import ProductCard from "@/components/products/ProductCard";
-import Animal from "../public/Home/Animal-Feed-Products.jpg";
-import Fertilizers from "../public/Home/Fertilizers.jpg";
-import Mining from "../public/Home/Mining.jpg";
-import Clinker from "../public/Home/CLinker-&-Cemet.jpg";
-import Fruits from "../public/Home/Fruits-and-Vegitables.jpg";
-
-import quality from "../public/Home/Quality-matters.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper";
 
 import { motion } from "framer-motion";
 
@@ -18,52 +8,10 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { useEffect, useState } from "react";
-
-export type Product = {
-  name: string;
-  image: string;
-  products?: Product[];
-};
-
-const products: Product[] = [
-  {
-    name: "Animal feed products",
-    image: Animal.src,
-    products: [{ name: "test1", image: Animal.src }],
-  },
-  {
-    name: "Fertilizers",
-    image: Fertilizers.src,
-    products: [{ name: "test2", image: "tesssad" }],
-  },
-  {
-    name: "Human feed products",
-    image: Fruits.src,
-    products: [{ name: "test2", image: "tesssad" }],
-  },
-  {
-    name: "Mining",
-    image: Mining.src,
-    products: [{ name: "test2", image: "tesssad" }],
-  },
-  {
-    name: "Clinker & Cement",
-    image: Clinker.src,
-    products: [{ name: "test2", image: "tesssad" }],
-  },
-];
+import Prodcuts from "@/components/Prodcuts";
+import QualityMatters from "@/components/QualityMatters";
 
 export default function Home() {
-  const [subProduct, setSubProduct] = useState<Product[]>();
-  const [animate, setAnimate] = useState(0);
-
-  const callback = (level2Product: Product[]) => {
-    setSubProduct(level2Product);
-    setAnimate(1);
-  };
-
-  useEffect(() => {}, [subProduct, animate]);
   return (
     <div className="flex flex-col items-center justify-between ">
       {/* Banner */}
@@ -205,122 +153,10 @@ export default function Home() {
             QUALITY MATTERS
           </p>
         </div>
-
-        <div className="">
-          <Swiper
-            breakpoints={{
-              640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-
-              1024: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-              },
-
-              1280: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-              },
-
-              1536: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-              },
-            }}
-            slidesPerView={2}
-            spaceBetween={20}
-            freeMode={true}
-            modules={[FreeMode, Pagination]}
-            className="mySwiper"
-          >
-            {products.map((el, i) => {
-              return (
-                <SwiperSlide key={i} style={{ scale: 0.9 }}>
-                  <ProductCard callback={callback} data={el}></ProductCard>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: animate }}
-          transition={{ duration: 2 }}
-          className="px-20"
-        >
-          <Swiper
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-
-              1024: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-              },
-
-              1280: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-              },
-
-              1536: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-              },
-            }}
-            slidesPerView={1}
-            spaceBetween={20}
-            freeMode={true}
-            modules={[FreeMode, Pagination]}
-            className="mySwiper"
-          >
-            {subProduct?.map((el, i) => {
-              return (
-                <SwiperSlide key={i} style={{ scale: 0.9 }}>
-                  <ProductCard data={el}></ProductCard>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </motion.div> */}
+        <Prodcuts></Prodcuts>
       </div>
-      {/* s */}
-      <div className="container flex flex-row flex-wrap mt-16">
-        <div className="w-full lg:w-6/12 flex flex-col justify-center p-5 lg:p-16 bg-myGray">
-          <div>
-            <h2 className="text-8xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
-              Quality Matters
-            </h2>
-            <p className="text-2xl font-ITCAVANTGARDESTD text-gray-500 py-5 pl-0 lg:pl-24">
-              We believe in treating our customers with respect and faith.
-            </p>
-            <p className="text-2xl font-ITCAVANTGARDESTD text-gray-500 py-5 pl-0 lg:pl-24">
-              We grow through creativity, invention and innovation,
-            </p>
-            <p className="text-2xl font-ITCAVANTGARDESTD text-gray-500 py-5 pl-0 lg:pl-24">
-              We integrate honesty, integrity and business ethics into all
-              aspects of our business functioning{" "}
-            </p>
-          </div>
-        </div>
-        <div className="w-full lg:w-6/12">
-          <img className="w-full" src={quality.src}></img>
-        </div>
-      </div>
+      {/* Quality */}
+      <QualityMatters></QualityMatters>
     </div>
   );
 }

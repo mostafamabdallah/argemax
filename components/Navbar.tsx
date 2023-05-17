@@ -13,16 +13,16 @@ const Navbar = (props: Props) => {
       <div className="flex w-fit ">
         <ul className="w-full flex gap-2 justify-end items-center">
           <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-            <Link href={""}>HOME</Link>
+            <Link href={"/"}>HOME</Link>
           </li>
           <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-            <Link href={""}>PRODUCTS</Link>
+            <Link href={"/our-products"}>PRODUCTS</Link>
           </li>
           <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-            <Link href={""}>ABOUT US</Link>
+            <Link href={"/contact-us"}>ABOUT US</Link>
           </li>
           <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-            <Link href={""}>CONTACT US</Link>
+            <Link href={"/contact-us"}>CONTACT US</Link>
           </li>
         </ul>
       </div>
