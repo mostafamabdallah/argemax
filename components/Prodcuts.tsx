@@ -19,33 +19,39 @@ export type Product = {
   name: string;
   image: string;
   products?: Product[];
+  url: string;
 };
 
 const products: Product[] = [
   {
     name: "Animal feed products",
     image: Animal.src,
-    products: [{ name: "test1", image: Animal.src }],
+    products: [{ name: "test1", image: Animal.src, url: "/clinker-cement" }],
+    url: "/clinker-cement",
   },
   {
     name: "Fertilizers",
     image: Fertilizers.src,
-    products: [{ name: "test2", image: "tesssad" }],
+    products: [{ name: "test2", image: "tesssad", url: "/clinker-cement" }],
+    url: "/clinker-cement",
   },
   {
     name: "Human feed products",
     image: Fruits.src,
-    products: [{ name: "test2", image: "tesssad" }],
+    products: [{ name: "test2", image: "tesssad", url: "/clinker-cement" }],
+    url: "/fruits-vegetables",
   },
   {
     name: "Mining",
     image: Mining.src,
-    products: [{ name: "test2", image: "tesssad" }],
+    products: [{ name: "test2", image: "tesssad", url: "/clinker-cement" }],
+    url: "/clinker-cement",
   },
   {
     name: "Clinker & Cement",
     image: Clinker.src,
-    products: [{ name: "test2", image: "tesssad" }],
+    products: [{ name: "test2", image: "tesssad", url: "/clinker-cement" }],
+    url: "/clinker-cement",
   },
 ];
 
