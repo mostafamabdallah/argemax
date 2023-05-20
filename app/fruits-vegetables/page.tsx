@@ -11,7 +11,7 @@ const page = (props: Props) => {
       <div className={` bg-cover flex mt-20`}>
         <div className="container  px-5  xl:px-20  flex  justify-center  gap-6 flex-wrap">
           <div className="w-full lg:flex-1">
-            <h2 className="text-7xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Fruits & Vegetables:{" "}
             </h2>
             <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">

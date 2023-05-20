@@ -21,3 +21,8 @@
 body{
   @apply bg-gray-50
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #0b7b3b !important;
+}

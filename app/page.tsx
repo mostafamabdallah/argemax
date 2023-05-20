@@ -18,7 +18,7 @@ export default function Home() {
       <MainBanner></MainBanner>
       {/* About */}
       <div className="container xl:px-20 flex flex-col py-20 px-5">
-        <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+        <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
           About US:
         </h2>
         <div className="lg:p-5">
@@ -50,7 +50,7 @@ export default function Home() {
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">
               Our Company’s
             </span>
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Vision
             </h2>
             <p className="text-xl font-ITCAVANTGARDESTD text-gray-500 py-5 text-justify">
@@ -63,7 +63,7 @@ export default function Home() {
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">
               Our Company’s
             </span>
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Mission
             </h2>
             <p className="text-xl font-ITCAVANTGARDESTD text-gray-500 py-5 text-justify">
@@ -76,7 +76,7 @@ export default function Home() {
       </div>
       {/* our services */}
       <div className="container xl:px-20 flex flex-col py-20 px-5">
-        <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+        <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
           Our Services:
         </h2>
         <div className="lg:p-5">

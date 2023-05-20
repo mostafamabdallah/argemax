@@ -14,9 +14,9 @@ const Page = (props: Props) => {
         style={{ backgroundImage: `url(${background2.src})` }}
         className={`h-screen w-full  ')] bg-cover flex`}
       >
-        <div className="container lg:w-7/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
-          <h1 className="font- text-7xl   text-white">
-            <span className="text-6xl font-extrabold "> Our Products </span>
+        <div className="container w-full lg:w-7/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
+          <h1 className="font- lg:text-7xl  text-3xl   text-white">
+            <span className="lg:text-6xl text-4xlfont-extrabold "> Our Products </span>
           </h1>
           <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
             We are fully aware that our business partners expect more than
@@ -32,7 +32,7 @@ const Page = (props: Props) => {
             of best product with the perfect service.
           </p>
         </div>
-        <div className="w-9/12"></div>
+        <div className="lg:w-9/12 hidden lg:block"></div>
       </div>
       <div className="w-full flex flex-col ">
         <div className="container py-20 px-5  xl:px-20">

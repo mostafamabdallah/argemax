@@ -23,8 +23,8 @@ const Page = (props: Props) => {
         className={`h-screen w-full  ')] bg-cover flex`}
       >
         <div className="container lg:w-7/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
-          <h1 className="font- text-7xl   text-white">
-            <span className="text-6xl font-extrabold "> Hay Products:</span>
+          <h1 className="font- lg:text-7xl  text-3xl   text-white">
+            <span className="lg:text-6xl text-4xlfont-extrabold "> Hay Products:</span>
           </h1>
           <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
             - Dehydrated Alfalfa in bales
@@ -45,7 +45,7 @@ const Page = (props: Props) => {
         <div className="w-9/12"></div>
       </div>
       <div className="container xl:px-20 flex flex-col py-20 px-5">
-        <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+        <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
           We at AgreMax Supply two types of ALFALFA products:
         </h2>{" "}
         <h3 className="text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary py-8">
@@ -63,10 +63,10 @@ const Page = (props: Props) => {
         </div>
       </div>
       {/* type1 */}
-      <div className="flex flex-row flex-wrap bg-gray-100">
-        <div className="w-full lg:w-6/12 flex flex-col justify-center p-5 lg:p-16 ">
+      <div className="container xl:px-20 flex flex-col py-20 px-5 bg-gray-100">
+        <div className="w-full lg:w-6/12 flex flex-row justify-center">
           <div>
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="text-3xl lg:lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary truncate">
               Characteristics of
             </h2>{" "}
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">
@@ -177,7 +177,7 @@ const Page = (props: Props) => {
         <div className="flex flex-row flex-wrap ">
           <div className="w-full lg:w-7/12 flex flex-col justify-center p-5 lg:p-16 ">
             <div>
-              <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+              <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 Sun-cured Alfalfa:
               </h2>{" "}
               <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
@@ -199,7 +199,7 @@ const Page = (props: Props) => {
         <div className="flex flex-row flex-wrap ">
           <div className="w-full lg:w-7/12 flex flex-col justify-center p-5 lg:p-16 ">
             <div>
-              <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+              <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 Oat Hay:
               </h2>{" "}
               <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">

@@ -18,8 +18,8 @@ const Page = (props: Props) => {
         className={`h-screen w-full  ')] bg-cover flex`}
       >
         <div className="container lg:w-8/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
-          <h1 className="font- text-7xl   text-white">
-            <span className="text-6xl font-extrabold ">
+          <h1 className="font- lg:text-7xl  text-3xl   text-white">
+            <span className="lg:text-6xl text-4xlfont-extrabold ">
               {" "}
               Sugar Beet Pulp Pellets
             </span>
@@ -41,7 +41,7 @@ const Page = (props: Props) => {
       </div>
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-col">
-          <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Introduction To Sugar Beet Pulp Pellets:
           </h2>{" "}
           <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
@@ -61,7 +61,7 @@ const Page = (props: Props) => {
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center p-5 lg:p-16 ">
           <div>
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Why Sugar Beet Pulp Pellets?{" "}
             </h2>{" "}
             <div className="flex flex-row flex-wrap gap-8 justify-between items-center py-10">
@@ -81,7 +81,7 @@ const Page = (props: Props) => {
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-row gap-16 flex-wrap">
           <div className="w-full lg:flex-1">
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
               What is SBPP:
             </h2>{" "}
             <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8 text-justify">
@@ -105,7 +105,7 @@ const Page = (props: Props) => {
 
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-col">
-          <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Introduction To Reddish Sesame:
           </h2>{" "}
           <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
@@ -120,7 +120,7 @@ const Page = (props: Props) => {
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-row gap-16 flex-wrap">
           <div className="w-full lg:flex-1">
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Sugar Beet Pulp Pellets Market{" "}
             </h2>{" "}
             <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8 text-justify">
@@ -153,7 +153,7 @@ const Page = (props: Props) => {
           </div>
           <div className="w-full lg:flex-1">
             <img className="w-full" src={Suitable.src}></img>
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary py-5">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary py-5">
               Future Of SBPP:
             </h2>{" "}
             <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-5 text-justify ">

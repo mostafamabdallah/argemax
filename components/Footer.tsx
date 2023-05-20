@@ -1,3 +1,5 @@
+import { faFacebook ,faLinkedin ,faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 type Props = {};
@@ -6,7 +8,7 @@ const Footer = (props: Props) => {
   return (
     <div className=" bg-primary">
       <div className=" container flex flex-col  xl:px-20 py-10">
-        <h1 className="text-6xl lg:text-9xl text-center text-[#0a6d34] font-ITCAVANTGARDESTDBold font-extrabold ">
+        <h1 className="lg:text-6xl text-4xllg:text-9xl text-center text-[#0a6d34] font-ITCAVANTGARDESTDBold font-extrabold ">
           {" "}
           CONTACT US
         </h1>
@@ -54,12 +56,34 @@ const Footer = (props: Props) => {
                 Website: <a href="https://agremax.net">https://agremax.net</a>{" "}
               </li>
             </ul>
+            <div className="flex flex-row flex-wrap gap-4 px-8 ">
+              <a href="https://www.facebook.com/profile.php?id=100086376308894" target="_blank"> 
+                <FontAwesomeIcon
+                  className="text-white text-4xl"
+                  icon={faFacebook}
+                ></FontAwesomeIcon>
+              </a>
+              <a href="https://www.instagram.com/agremaxgtllc/" target="_blank"> 
+                <FontAwesomeIcon
+                  className="text-white text-4xl"
+                  icon={faInstagram}
+                ></FontAwesomeIcon>
+              </a>
+              <a href="https://www.linkedin.com/company/86393930" target="_blank"> 
+                <FontAwesomeIcon
+                  className="text-white text-4xl"
+                  icon={faLinkedin}
+                ></FontAwesomeIcon>
+              </a>
+            </div>
           </div>
         </div>
         <div className="bg-myGray"></div>
       </div>
       <div className="bg-white container xl:px-20 py-6">
-        <p className="text-base text-gray-400 font-ITCAVANTGARDESTD">AgreMax general trading LLC • Downloads</p>
+        <p className="text-base text-gray-400 font-ITCAVANTGARDESTD">
+          AgreMax general trading LLC • Downloads
+        </p>
       </div>
     </div>
   );

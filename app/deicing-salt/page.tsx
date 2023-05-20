@@ -11,7 +11,7 @@ const page = (props: Props) => {
       <div className={` bg-cover flex mt-20`}>
         <div className="container h-full px-5  xl:px-20  flex  justify-center  gap-6">
           <div className="w-full lg:flex-1">
-            <h2 className="text-7xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
               De-icing Salt:
             </h2>
             <h2 className="text-5xl font-ITCAVANTGARDESTDBold mt-3 font-extrabold text-gray-300">

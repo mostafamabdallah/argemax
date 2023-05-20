@@ -11,7 +11,7 @@ const page = (props: Props) => {
     <div className="flex flex-col items-center justify-between bg-white">
       <div className={` bg-cover flex mt-20`}>
         <div className="container  h-full px-5  xl:px-20  flex flex-col justify-center  ">
-          <h2 className="text-7xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             FERTILIZERS:
           </h2>
           <h2 className="text-5xl font-ITCAVANTGARDESTDBold mt-3 font-extrabold text-gray-300">
@@ -37,7 +37,7 @@ const page = (props: Props) => {
               <img className="w-full" src={grass2.src}></img>
             </div>
             <div className="flex-[2] flex flex-col">
-              <h2 className="text-7xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+              <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 FERTILIZERS:
               </h2>
               <ul className="text-2xl ITCAVANTGARDESTD text-gray-700  font-semibold mt-7 tracking-[0.3rem] flex flex-col gap-8">

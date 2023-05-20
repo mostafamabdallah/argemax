@@ -4,8 +4,23 @@ import Fertilizers from "../public/Home/Fertilizers.jpg";
 import Mining from "../public/Home/Mining.jpg";
 import Clinker from "../public/Home/CLinker-&-Cemet.jpg";
 import Fruits from "../public/Home/Fruits-and-Vegitables.jpg";
+import 'swiper/swiper-bundle.min.css';
+
+// sub categoreise
+import FruitsVegiies from "../public/sub catergories/Fruits-&-Vegiies.jpg";
+import GrassProducts from "../public/sub catergories/Grass-Products.jpg";
+import HayProducts from "../public/sub catergories/Hay-Products.jpg";
+import Peanuts from "../public/sub catergories/Peanuts.jpg";
+import Pumkin from "../public/sub catergories/Pumkin-Seeds.jpg";
+import Sesame from "../public/sub catergories/Sesame.jpg";
+import Sugar from "../public/sub catergories/Sugar-Beet-Pulp.jpg";
+import Sunflower from "../public/sub catergories/Sunflower-seeds.jpg";
+import straw from "../public/sub catergories/straw-Products.jpg";
+
+//
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 
 import { motion } from "framer-motion";
 
@@ -20,38 +35,106 @@ export type Product = {
   image: string;
   products?: Product[];
   url: string;
+  type?: string;
+  hasSub?: boolean;
 };
+SwiperCore.use([Navigation]);
 
 const products: Product[] = [
   {
     name: "Animal feed products",
     image: Animal.src,
-    products: [{ name: "test1", image: Animal.src, url: "/clinker-cement" }],
-    url: "/clinker-cement",
+    products: [
+      {
+        name: "Grass Products",
+        image: GrassProducts.src,
+        url: "/grass",
+        type: "sub",
+      },
+
+      {
+        name: "Sugar beet pulp pellets",
+        image: Sugar.src,
+        url: "/sbpp",
+        type: "sub",
+      },
+      {
+        name: "Hay Products",
+        image: HayProducts.src,
+        url: "/hey-products",
+        type: "sub",
+      },
+      {
+        name: "Straw Products",
+        image: straw.src,
+        url: "/straw-products",
+        type: "sub",
+      },
+    ],
+    url: "/",
+    type: "category",
   },
   {
     name: "Fertilizers",
     image: Fertilizers.src,
-    products: [{ name: "test2", image: "tesssad", url: "/clinker-cement" }],
-    url: "/clinker-cement",
+    products: [],
+    url: "/fertilizers",
+    type: "category",
+    hasSub: false,
   },
   {
     name: "Human feed products",
     image: Fruits.src,
-    products: [{ name: "test2", image: "tesssad", url: "/clinker-cement" }],
-    url: "/fruits-vegetables",
+    products: [
+      {
+        name: "Fruits & Vegetables ",
+        image: Fruits.src,
+        url: "/fruits-vegetables",
+        type: "sub",
+      },
+      {
+        name: "Sesame ",
+        image: Sesame.src,
+        url: "/sesame",
+        type: "sub",
+      },
+      {
+        name: "Peanuts",
+        image: Peanuts.src,
+        url: "/peanuts-amended",
+        type: "sub",
+      },
+      {
+        name: "Sunflower Seeds ",
+        image: Sunflower.src,
+        url: "/sunflower-seeds",
+        type: "sub",
+      },
+      {
+        name: "Pumkin Seeds",
+        image: Pumkin.src,
+        url: "/pumpkin-seeds",
+        type: "sub",
+      },
+    ],
+    url: "/",
+    type: "category",
   },
   {
     name: "Mining",
     image: Mining.src,
-    products: [{ name: "test2", image: "tesssad", url: "/clinker-cement" }],
-    url: "/clinker-cement",
+    products: [],
+    url: "/mining",
+    type: "category",
+    hasSub: false,
   },
   {
     name: "Clinker & Cement",
     image: Clinker.src,
-    products: [{ name: "test2", image: "tesssad", url: "/clinker-cement" }],
+    products: [],
     url: "/clinker-cement",
+    type: "category",
+    hasSub: false,
   },
 ];
 
@@ -68,49 +151,97 @@ const Prodcuts = (props: Props) => {
 
   useEffect(() => {}, [subProduct, animate]);
   return (
-    <div className="">
-      <Swiper
-        breakpoints={{
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
+    <>
+      <div className="">
+        <Swiper
+          navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
 
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
 
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
 
-          1280: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-          },
+            1280: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
 
-          1536: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-          },
-        }}
-        slidesPerView={2}
-        spaceBetween={20}
-        freeMode={true}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
+            1536: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }}
+          slidesPerView={2}
+          spaceBetween={20}
+          freeMode={true}
+          modules={[FreeMode, Pagination]}
+          className="mySwiper"
+        >
+          {products.map((el, i) => {
+            return (
+              <SwiperSlide key={i} style={{ scale: 0.9 }}>
+                <ProductCard callback={callback} data={el}></ProductCard>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: animate }}
+        transition={{ duration: 2 }}
+        className="px-20"
       >
-        {products.map((el, i) => {
-          return (
-            <SwiperSlide key={i} style={{ scale: 0.9 }}>
-              <ProductCard callback={callback} data={el}></ProductCard>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
+        <Swiper
+          navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1280: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+            1536: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }}
+          slidesPerView={1}
+          spaceBetween={10}
+          freeMode={true}
+          modules={[FreeMode, Pagination]}
+          className="mySwiper"
+        >
+          {subProduct?.map((el, i) => {
+            return (
+              <SwiperSlide key={i} style={{ scale: 0.9 }}>
+                <ProductCard data={el}></ProductCard>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </motion.div>
+    </>
   );
 };
 

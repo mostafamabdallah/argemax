@@ -18,8 +18,8 @@ const Page = (props: Props) => {
         className={`h-screen w-full  ')] bg-cover flex`}
       >
         <div className="container lg:w-8/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
-          <h1 className="font- text-7xl   text-white">
-            <span className="text-6xl font-extrabold "> Sesame:</span>
+          <h1 className="font- lg:text-7xl  text-3xl   text-white">
+            <span className="lg:text-6xl text-4xlfont-extrabold "> Sesame:</span>
           </h1>
           <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
             We are fully aware that our business partners expect more than
@@ -39,7 +39,7 @@ const Page = (props: Props) => {
       </div>
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-col">
-          <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Introduction To White Sesame:
           </h2>{" "}
           <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
@@ -58,7 +58,7 @@ const Page = (props: Props) => {
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center p-5 lg:p-16 ">
           <div>
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Characteristics of
             </h2>{" "}
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">
@@ -90,7 +90,7 @@ const Page = (props: Props) => {
 
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-col">
-          <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Introduction To Reddish Sesame:
           </h2>{" "}
           <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
@@ -108,7 +108,7 @@ const Page = (props: Props) => {
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center p-5 lg:p-16 ">
           <div>
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Characteristics
             </h2>{" "}
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">

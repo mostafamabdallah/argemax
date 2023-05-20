@@ -7,7 +7,7 @@ const QualityMatters = (props: Props) => {
     <div className="container flex flex-row flex-wrap mt-16">
       <div className="w-full lg:w-6/12 flex flex-col justify-center p-5 lg:p-16 bg-myGray">
         <div>
-          <h2 className="text-8xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-8x text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Quality Matters
           </h2>
           <p className="text-2xl font-ITCAVANTGARDESTD text-gray-500 py-5 pl-0 lg:pl-24">

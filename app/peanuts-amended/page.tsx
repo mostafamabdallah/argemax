@@ -15,8 +15,8 @@ const Page = (props: Props) => {
         className={`h-screen w-full  ')] bg-cover flex`}
       >
         <div className="container lg:w-8/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
-          <h1 className="font- text-7xl   text-white">
-            <span className="text-6xl font-extrabold "> Peanuts:</span>
+          <h1 className="font- lg:text-7xl  text-3xl   text-white">
+            <span className="lg:text-6xl text-4xlfont-extrabold "> Peanuts:</span>
           </h1>
           <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
             We are fully aware that our business partners expect more than
@@ -41,7 +41,7 @@ const Page = (props: Props) => {
       </div>
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-col">
-          <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Introduction To Peanuts:
           </h2>{" "}
           <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
@@ -59,7 +59,7 @@ const Page = (props: Props) => {
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center p-5 lg:p-16 ">
           <div>
-            <h2 className="text-6xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Uses Of
             </h2>{" "}
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">
