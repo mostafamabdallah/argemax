@@ -19,17 +19,20 @@ const Page = (props: Props) => {
       >
         <div className="container lg:w-8/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
           <h1 className="font- lg:text-7xl  text-3xl   text-white">
-            <span className="lg:text-6xl text-4xlfont-extrabold "> Sesame:</span>
+            <span className="lg:text-6xl text-4xl font-extrabold ">
+              {" "}
+              Sesame:
+            </span>
           </h1>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             We are fully aware that our business partners expect more than
             merely the best quality products.
           </p>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             Consequently, to meet their expectations we follow the rule: Always
             best quality, always good prices, always on time.
           </p>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             We understand that the best quality is equivalent to the combination
             of best product with the perfect service.
           </p>
@@ -39,7 +42,7 @@ const Page = (props: Props) => {
       </div>
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-col">
-          <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Introduction To White Sesame:
           </h2>{" "}
           <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
@@ -53,25 +56,28 @@ const Page = (props: Props) => {
       </div>
       {/* type1 */}
       <div className="flex flex-row flex-wrap bg-gray-100 w-full">
-        <div className="w-full lg:w-7/12">
+        <div className="w-full lg:w-6/12">
           <img className="w-full" src={Sesame.src}></img>
         </div>
-        <div className="w-full lg:w-5/12 flex flex-col justify-center p-5 lg:p-16 ">
+        <div className="w-full lg:w-6/12 flex flex-col justify-center p-5 lg:p-16 ">
           <div>
-            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Characteristics of
             </h2>{" "}
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">
               Whitish Sesame Seeds:
             </span>
-            <div className="flex flex-row flex-wrap gap-8 justify-between items-center py-10">
-              <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
-                This tiny seed, one of the oldest in the history of spices, is
-                full of flavour, crunch, and even health benefits. Sesamum
-                indicum is the scientific name for sesame seed. The term sesame
-                seed is derived from the Greek word sesamon. It is commonly used
-                in Middle Eastern, Asian, Mediterranean, and Northern African
-                cuisines.
+            <div className="flex flex-row flex-wrap gap-8 justify-between items-center py-3">
+              <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin">
+                White Sesame seeds are high in protein as well as many B
+                vitamins, including thiamine, niacin, and B6, which help to
+                promote proper cell function and boost metabolism. The seeds are
+                also a significant source of fiber and contain high levels of
+                minerals, including manganese, magnesium, copper, calcium, and
+                iron. The seeds contain two types of lignan fiber that are not
+                found in other plant species. These types of fiber are good for
+                digestive health and have been shown to help reduce bad
+                cholesterol within the body.
               </p>
             </div>
           </div>
@@ -90,7 +96,7 @@ const Page = (props: Props) => {
 
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-col">
-          <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Introduction To Reddish Sesame:
           </h2>{" "}
           <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
@@ -108,18 +114,18 @@ const Page = (props: Props) => {
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center p-5 lg:p-16 ">
           <div>
-            <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
+            <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Characteristics
             </h2>{" "}
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">
               of reddish Sesame Seeds:
             </span>
-            <div className="flex flex-row flex-wrap gap-8 justify-between items-center py-10">
-              <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
+            <div className="flex flex-row flex-wrap gap-8 justify-between items-center ">
+              <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin py-3">
                 Sesame seeds are tiny, oil-rich seeds that grow in pods on the
                 Sesamum indicum plant.
               </p>
-              <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin pt-8">
+              <p className="text-gray-500 text-xl font-ITCAVANTGARDESTDThin ">
                 Reddish Type applications include crushing for oil extraction in
                 the production of sesame seed oil.
               </p>

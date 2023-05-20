@@ -10,28 +10,28 @@ const page = (props: Props) => {
     <div className="flex flex-col items-center justify-between bg-white">
       <div className={` bg-cover flex mt-20`}>
         <div className="container h-full px-5  xl:px-20  flex  justify-center  gap-6">
-          <div className="w-full lg:flex-1">
+          <div className="w-full lg:flex-[2]">
             <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Pumpkin Seeds:
             </h2>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - Agremax provides the best quality pumpkin seeds from our
               partners around the world.
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - We harvest the seeds directly from the biggest farms in INNER
               MONGOLIA region which is famous for delivering the highest quality
               seeds compared to other regions.
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - As a customer centric company, we promise our customers to have
               the best-in-class services.
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - Agremax have the best supply chain in its field which allows it
               to deliver maximum efficiency services to our customers.{" "}
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - Here in Agremax we assure our customers high quality products
               with no compromises.{" "}
             </p>

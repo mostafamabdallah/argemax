@@ -15,19 +15,19 @@ const page = (props: Props) => {
           <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Cement & Clinker
           </h2>
-          <h2 className="text-5xl font-ITCAVANTGARDESTDBold mt-3 font-extrabold text-gray-300">
+          <h2 className="text-4xl font-ITCAVANTGARDESTDBold mt-3 font-extrabold text-gray-300">
             Ordinary & White Cement
           </h2>
-          <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8">
+          <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8">
             Agremax is supplying varieties of products range intended for cement
             industry, our products are selected to meet the requirements of the
             industrial players in Egypt & the international market.
           </p>
-          <p className="text-3xl ITCAVANTGARDESTDThin text-black font-extrabold mt-5">
+          <p className="text-3xl font-ITCAVANTGARDESTDThin text-black font-extrabold mt-5">
             {" "}
             CLINKER IS SUITABLE FOR THE PRODUCTION OF:
           </p>
-          <ul className="text-2xl ITCAVANTGARDESTDThin text-gray-800  mt-5 list-disc px-16">
+          <ul className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800  mt-5 list-disc px-16">
             {" "}
             <li>Ordinary Portland Cement </li>
             <li>(OPC) EN & ASTM. -White Cement. </li>

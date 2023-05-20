@@ -10,15 +10,15 @@ const MainBanner = (props: Props) => {
     >
       <div className="container h-full px-5  xl:px-20  flex flex-col justify-center ">
         <h1 className="font- lg:text-6xl text-4xl text-white ">
-          <span className="lg:text-6xl text-4xlfont-extrabold ">We Grow Through </span>
+          <span className="lg:text-6xl text-4xl font-extrabold ">We Grow Through </span>
           <br />
-          <span className="ITCAVANTGARDESTDThin lg:text-6xl text-4xlfont-light">
+          <span className="font-ITCAVANTGARDESTDThin lg:text-6xl text-4xl font-light">
             Creativity, Invention
             <br />
             And Innovation
           </span>
         </h1>
-        <p className="text-white absolute bottom-10 tracking-[2rem] text-lg ITCAVANTGARDESTDThin hidden lg:block">
+        <p className="text-white absolute bottom-10 tracking-[2rem] text-lg font-ITCAVANTGARDESTDThin hidden lg:block">
           QUALITY MATTERS
         </p>
       </div>

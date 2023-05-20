@@ -7,7 +7,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <div className="flex flex-col items-center justify-between bg-myGray flex-wrap">
-      <div className="container xl:px-20 flex flex-row py-20 px-5 bg-secondary flex-wrap">
+      <div className="container xl:px-20 flex flex-row py-20 px-5 bg-primary flex-wrap">
         <div className="flex flex-col w-full lg:w-6/12">
           <div className="w-full flex-col lg:w-8/12">
             <h3 className="text-black text-xl font-ITCAVANTGARDESTDBold opacity-70">

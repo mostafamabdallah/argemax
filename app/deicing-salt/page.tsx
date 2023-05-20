@@ -17,17 +17,17 @@ const page = (props: Props) => {
             <h2 className="text-5xl font-ITCAVANTGARDESTDBold mt-3 font-extrabold text-gray-300">
               Bulk De-icing Salt
             </h2>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               Agremax supplies and transports bulk deicing salt to
               municipalities, government agencies, and private commercial
               businesses across the country as a reliable bulk road salt
               supplier.
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               With our treatment with YPS (yellow prussiate of soda), the
               anti-caking agent helps resist caking and prevent clumping.
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               Agremax’s bulk deicing salt is a standard for winter maintenance
               deicing programs and requires less spring cleanup than sand or
               other abrasives.

@@ -14,16 +14,16 @@ const page = (props: Props) => {
             <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Fruits & Vegetables:{" "}
             </h2>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               Our vast network makes us able to source and supply a wide range
               of fresh fruits and vegetables from the most reliable farms in
               Egypt.
             </p>
-            <p className="text-2xl font-ITCAVANTGARDESTDBold text-white my-8 text-justify bg-primary px-3 py-1 capitalize ">
+            <p className="text-3xl  inline font-ITCAVANTGARDESTDBold text-white my-8 text-justify bg-primary px-3 py-1 capitalize ">
               we specialize in the export of:
             </p>
             <div className="flex px-5 lg:px-10 gap-10">
-              <ul className="text-xl ITCAVANTGARDESTDThin text-gray-600 flex flex-col gap-3 flex-1  mt-5 list-disc">
+              <ul className="text-xl font-ITCAVANTGARDESTDThin text-gray-600 flex flex-col gap-3 flex-1  mt-5 list-disc">
                 {" "}
                 <li>Potatoes</li>
                 <li>Onion</li>
@@ -33,7 +33,7 @@ const page = (props: Props) => {
                 <li>Water Melon</li>
                 <li>Strawberry</li>
               </ul>
-              <ul className="text-xl ITCAVANTGARDESTDThin text-gray-600 flex flex-col gap-3 flex-1  mt-5 list-disc">
+              <ul className="text-xl font-ITCAVANTGARDESTDThin text-gray-600 flex flex-col gap-3 flex-1  mt-5 list-disc">
                 {" "}
                 <li>Pomegranate</li>
                 <li>Oranges</li>
@@ -44,7 +44,7 @@ const page = (props: Props) => {
               </ul>
             </div>
           </div>
-          <div className="w-full lg:flex-[2]">
+          <div className="w-full lg:flex-1">
             <img src={Fruits.src} alt="" className="w-full" />
           </div>
         </div>

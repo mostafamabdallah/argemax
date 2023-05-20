@@ -14,20 +14,20 @@ const page = (props: Props) => {
             <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
               Sunflower seeds:
             </h2>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - We harvest the seeds directly from the biggest farms in INNER
               MONGOLIA region which is famous for delivering the highest quality
               seeds compared to other regions.
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - As a customer centric company, we promise our customers to have
               the best-in-class services.
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - Agremax have the best supply chain in its field which allows it
               to deliver maximum efficiency services to our customers.
             </p>
-            <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
+            <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 my-8 text-justify">
               - Here in Agremax we assure our customers high quality products
               with no compromises.
             </p>

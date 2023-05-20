@@ -14,24 +14,24 @@ const page = (props: Props) => {
           <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Fescue:
           </h2>
-          <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 mt-8">
+          <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 mt-8">
             Fescue (festuca pratensis) is a perennial gross is grown for seed.
             Fesoue strow is o by-produc of the harvest. Fescue straw provides a
             good source of roughope and is used in both beef and dairy
             production.
           </p>
 
-          <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800">
+          <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800">
             Agremax can supply P2O5 from 24% up to 31.5%.
           </p>
           <img className="w-full py-16" src={Fescue.src}></img>
 
-          <div className="flex flex-row flex-wrap gap-16">
+          <div className="flex flex-row flex-wrap gap-16 py-10">
             <div className="flex-[2] flex flex-col">
               <h2 className="text-5xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 Oat Hay:
               </h2>
-              <p className="text-2xl ITCAVANTGARDESTDThin text-gray-800 mt-8">
+              <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 mt-8">
                 Oot (Avena sativa) hay is achieved by cutting the crop when the
                 grain is milk to soft dough stage. The crop is then sun-cured
                 until moisture is at a suitable level for the material to be

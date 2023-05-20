@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import background2 from "../../public/Home/Banner.jpg";
+import background2 from "../../public/hay prodcuts/Banner.jpg";
 import quality from "../../public/Home/Quality-matters.jpg";
 import Prodcuts from "../../components/Prodcuts";
 import QualityMatters from "@/components/QualityMatters";
@@ -16,17 +16,17 @@ const Page = (props: Props) => {
       >
         <div className="container w-full lg:w-7/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
           <h1 className="font- lg:text-7xl  text-3xl   text-white">
-            <span className="lg:text-6xl text-4xlfont-extrabold "> Our Products </span>
+            <span className="lg:text-6xl text-4xl font-extrabold "> Our Products </span>
           </h1>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             We are fully aware that our business partners expect more than
             merely the best quality products.
           </p>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             Consequently, to meet their expectation swe follow the rule: Always
             best quality,always good prices,alway son time.
           </p>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             {" "}
             Weunder stand that the best quality is equivalent to the combination
             of best product with the perfect service.

@@ -24,19 +24,19 @@ const Page = (props: Props) => {
       >
         <div className="container lg:w-7/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
           <h1 className="font- lg:text-7xl  text-3xl   text-white">
-            <span className="lg:text-6xl text-4xlfont-extrabold "> Hay Products:</span>
+            <span className="lg:text-6xl text-4xl font-extrabold "> Hay Products:</span>
           </h1>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             - Dehydrated Alfalfa in bales
           </p>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             - Dehydrated Alfalfa in pellets
           </p>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             {" "}
             -Sun-cured Alfalfa
           </p>
-          <p className="text-xl ITCAVANTGARDESTDThin text-white mt-5">
+          <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             {" "}
             - Oat Hay
           </p>
@@ -45,7 +45,7 @@ const Page = (props: Props) => {
         <div className="w-9/12"></div>
       </div>
       <div className="container xl:px-20 flex flex-col py-20 px-5">
-        <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
+        <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
           We at AgreMax Supply two types of ALFALFA products:
         </h2>{" "}
         <h3 className="text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary py-8">
@@ -63,10 +63,10 @@ const Page = (props: Props) => {
         </div>
       </div>
       {/* type1 */}
-      <div className="container xl:px-20 flex flex-col py-20 px-5 bg-gray-100">
-        <div className="w-full lg:w-6/12 flex flex-row justify-center">
+      <div className="container xl:px-20 flex flex-row gap-8 flex-wrap py-20 px-5 bg-gray-100">
+        <div className="w-full lg:flex-1 flex flex-row justify-center">
           <div>
-            <h2 className="text-3xl lg:lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary truncate">
+            <h2 className="text-3xl lg:text-6xl  font-ITCAVANTGARDESTDBold font-extrabold text-primary truncate">
               Characteristics of
             </h2>{" "}
             <span className="text-2xl font-ITCAVANTGARDESTD  text-primary">
@@ -90,14 +90,14 @@ const Page = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-6/12">
+        <div className="w-full lg:flex-1">
           <img className="w-full" src={DehydratedAlfalfa.src}></img>
         </div>
       </div>
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <div className="flex flex-row items-center justify-center">
           <button
-            className="px-10 rounded-full mb-16 py-3 bg-primary text-white font-ITCAVANTGARDESTD"
+            className="px-10 rounded-full mb-16 py-3 bg-primary text-white font-ITCAVANTGARDESTD text-xl"
             disabled
           >
             Suitable for:
@@ -121,17 +121,17 @@ const Page = (props: Props) => {
           </div>
         </div>
         <div className="flex justify-center mt-16">
-          <img src={table1.src} className="w-full lg:w-8/12"></img>
+          <img src={table1.src} className="w-full lg:w-7/12"></img>
         </div>
       </div>
       {/* type 2 */}
       <div className="flex flex-row flex-wrap bg-gray-100">
-        <div className="w-full lg:w-6/12 flex flex-col justify-center p-5 lg:p-16 ">
+        <div className="w-full lg:w-6/12 flex flex-col justify-center p-5 lg:pl-16 ">
           <div>
             <h2 className="text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
               2-Dehydrated alfalfa in Pellets:
             </h2>{" "}
-            <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
+            <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10 lg:pl-14">
               Dehydrated alfalfa milled and pressed into pellets. The vegetable
               protein of alfalfa is of high quality so this source of protein
               improves the quality of milk, eggs, and meat. They are perfect for
@@ -172,12 +172,12 @@ const Page = (props: Props) => {
           <img src={table2.src} className="w-full lg:w-8/12"></img>
         </div>
       </div>
-      <div className="container xl:px-20 flex flex-col py-20 px-5">
+      <div className="container xl:px-20 flex flex-col px-5">
         
         <div className="flex flex-row flex-wrap ">
           <div className="w-full lg:w-7/12 flex flex-col justify-center p-5 lg:p-16 ">
             <div>
-              <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
+              <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 Sun-cured Alfalfa:
               </h2>{" "}
               <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
@@ -195,11 +195,11 @@ const Page = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="container xl:px-20 flex flex-col py-20 px-5">
+      <div className="container xl:px-20 flex flex-col  px-5">
         <div className="flex flex-row flex-wrap ">
           <div className="w-full lg:w-7/12 flex flex-col justify-center p-5 lg:p-16 ">
             <div>
-              <h2 className="lg:text-6xl text-4xlfont-ITCAVANTGARDESTDBold font-extrabold text-primary">
+              <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 Oat Hay:
               </h2>{" "}
               <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">

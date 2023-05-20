@@ -42,6 +42,22 @@ SwiperCore.use([Navigation]);
 
 const products: Product[] = [
   {
+    name: "Mining",
+    image: Mining.src,
+    products: [],
+    url: "/mining",
+    type: "category",
+    hasSub: false,
+  },
+  {
+    name: "Fertilizers",
+    image: Fertilizers.src,
+    products: [],
+    url: "/fertilizers",
+    type: "category",
+    hasSub: false,
+  },
+  {
     name: "Animal feed products",
     image: Animal.src,
     products: [
@@ -74,14 +90,7 @@ const products: Product[] = [
     url: "/",
     type: "category",
   },
-  {
-    name: "Fertilizers",
-    image: Fertilizers.src,
-    products: [],
-    url: "/fertilizers",
-    type: "category",
-    hasSub: false,
-  },
+
   {
     name: "Human feed products",
     image: Fruits.src,
@@ -121,13 +130,39 @@ const products: Product[] = [
     type: "category",
   },
   {
-    name: "Mining",
-    image: Mining.src,
-    products: [],
-    url: "/mining",
+    name: "Animal feed products",
+    image: Animal.src,
+    products: [
+      {
+        name: "Grass Products",
+        image: GrassProducts.src,
+        url: "/grass",
+        type: "sub",
+      },
+
+      {
+        name: "Sugar beet pulp pellets",
+        image: Sugar.src,
+        url: "/sbpp",
+        type: "sub",
+      },
+      {
+        name: "Hay Products",
+        image: HayProducts.src,
+        url: "/hey-products",
+        type: "sub",
+      },
+      {
+        name: "Straw Products",
+        image: straw.src,
+        url: "/straw-products",
+        type: "sub",
+      },
+    ],
+    url: "/",
     type: "category",
-    hasSub: false,
   },
+
   {
     name: "Clinker & Cement",
     image: Clinker.src,
