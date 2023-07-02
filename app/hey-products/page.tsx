@@ -24,7 +24,10 @@ const Page = (props: Props) => {
       >
         <div className="container lg:w-7/12 h-full px-5  xl:px-20  flex flex-col justify-center  ">
           <h1 className="font- lg:text-7xl  text-3xl   text-white">
-            <span className="lg:text-6xl text-4xl font-extrabold "> Hay Products:</span>
+            <span className="lg:text-6xl text-4xl font-extrabold ">
+              {" "}
+              Hay Products:
+            </span>
           </h1>
           <p className="text-xl font-ITCAVANTGARDESTDThin text-white mt-5">
             - Dehydrated Alfalfa in bales
@@ -104,20 +107,21 @@ const Page = (props: Props) => {
           </button>
         </div>
         <div className="flex flex-row justify-center gap-24 items-center flex-wrap">
-          <div className="flex flex-col items-center justify-between gap-5 w-full lg:flex-1">
-            <img src={Goat.src} className="w-full"></img>
-          </div>
           <div className="flex flex-col items-center justify-between gap-5  w-full lg:flex-1">
             <img src={Cattle.src} className="w-full"></img>
           </div>
           <div className="flex flex-col items-center justify-between gap-5  w-full lg:flex-1">
-            <img src={Hourses.src} className="w-full"></img>
+            <img src={Sheep.src} className="w-full"></img>
           </div>
           <div className="flex flex-col items-center justify-between gap-5  w-full lg:flex-1">
             <img src={Rabits.src} className="w-full"></img>
           </div>
+          <div className="flex flex-col items-center justify-between gap-5 w-full lg:flex-1">
+            <img src={Goat.src} className="w-full"></img>
+          </div>
+
           <div className="flex flex-col items-center justify-between gap-5  w-full lg:flex-1">
-            <img src={Sheep.src} className="w-full"></img>
+            <img src={Hourses.src} className="w-full"></img>
           </div>
         </div>
         <div className="flex justify-center mt-16">
@@ -173,14 +177,13 @@ const Page = (props: Props) => {
         </div>
       </div>
       <div className="container xl:px-20 flex flex-col px-5">
-        
         <div className="flex flex-row flex-wrap ">
           <div className="w-full lg:w-7/12 flex flex-col justify-center p-5 lg:p-16 ">
             <div>
               <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 Sun-cured Alfalfa:
               </h2>{" "}
-              <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
+              <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10 lg:pl-14">
                 Sun-cured, baled alfalfa is ground, then steam processed to
                 about 100°F before it is pressed into dyes to form the finished
                 pellet. Dehydrated alfalfa is partially dried outdoors, then
@@ -202,7 +205,7 @@ const Page = (props: Props) => {
               <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 Oat Hay:
               </h2>{" "}
-              <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
+              <p className="text-lg font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10 lg:pl-14">
                 Oat (Avena sativa) hay is achieved by cutting the crop when the
                 grain is milk to the soft dough stage. The crop is then
                 sun-cured until moisture is at a suitable level for the material

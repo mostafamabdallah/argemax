@@ -7,10 +7,10 @@ const QualityMatters = (props: Props) => {
     <div className="container flex flex-row flex-wrap mt-16">
       <div className="w-full lg:w-6/12 flex flex-col justify-center p-5 lg:p-16 bg-myGray">
         <div>
-          <h2 className="lg:text-8x text-8xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
+          <h2 className="lg:text-8xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             Quality 
           </h2>
-          <h2 className="lg:text-8x text-8xl font-ITCAVANTGARDESTDBold font-extrabold text-primary pl-14">
+          <h2 className="lg:text-8xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary pl-14">
           Matters 
           </h2>
 

@@ -21,7 +21,7 @@ const ProductCard = ({ data, callback }: Props) => {
       {data.url == "/" ? (
         <>
           <img className="w-full" src={data.image} alt="" />
-          <h3 className="text-lg font-ITCAVANTGARDESTDBold font-extrabold text-primary text-center">
+          <h3 className="text-lg font-ITCAVANTGARDESTDBold font-extrabold text-primary text-center truncate">
             {data.name}
           </h3>
           <button
@@ -43,18 +43,18 @@ const ProductCard = ({ data, callback }: Props) => {
             className="flex flex-col items-center justify-center gap-5"
           >
             <img className="w-full" src={data.image} alt="" />
-            <h3 className="text-lg font-ITCAVANTGARDESTDBold font-extrabold text-primary text-center">
+            <h3 className="text-lg font-ITCAVANTGARDESTDBold font-extrabold text-primary text-center truncate">
               {data.name}
             </h3>
           </Link>
-          {data.hasSub == false || data.type == 'categoty' ? (
+          {data.hasSub == false || data.type == "categoty" ? (
             <Link
               href={data.url}
               className="bg-primary text-white px-4 py-2 rounded-full text-center"
             >
               Explore Products
             </Link>
-          ) : (
+          ) : data.type == "categoty" ? (
             <button
               onClick={() => {
                 callback(data.products);
@@ -63,6 +63,8 @@ const ProductCard = ({ data, callback }: Props) => {
             >
               Explore Products
             </button>
+          ) : (
+            ""
           )}
         </>
       )}

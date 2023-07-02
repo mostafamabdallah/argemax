@@ -4,7 +4,7 @@ import Fertilizers from "../public/Home/Fertilizers.jpg";
 import Mining from "../public/Home/Mining.jpg";
 import Clinker from "../public/Home/CLinker-&-Cemet.jpg";
 import Fruits from "../public/Home/Fruits-and-Vegitables.jpg";
-import 'swiper/swiper-bundle.min.css';
+import "swiper/swiper-bundle.min.css";
 
 // sub categoreise
 import FruitsVegiies from "../public/sub catergories/Fruits-&-Vegiies.jpg";
@@ -97,7 +97,7 @@ const products: Product[] = [
     products: [
       {
         name: "Fruits & Vegetables ",
-        image: Fruits.src,
+        image: FruitsVegiies.src,
         url: "/fruits-vegetables",
         type: "sub",
       },
@@ -129,40 +129,6 @@ const products: Product[] = [
     url: "/",
     type: "category",
   },
-  {
-    name: "Animal feed products",
-    image: Animal.src,
-    products: [
-      {
-        name: "Grass Products",
-        image: GrassProducts.src,
-        url: "/grass",
-        type: "sub",
-      },
-
-      {
-        name: "Sugar beet pulp pellets",
-        image: Sugar.src,
-        url: "/sbpp",
-        type: "sub",
-      },
-      {
-        name: "Hay Products",
-        image: HayProducts.src,
-        url: "/hey-products",
-        type: "sub",
-      },
-      {
-        name: "Straw Products",
-        image: straw.src,
-        url: "/straw-products",
-        type: "sub",
-      },
-    ],
-    url: "/",
-    type: "category",
-  },
-
   {
     name: "Clinker & Cement",
     image: Clinker.src,
@@ -262,14 +228,14 @@ const Prodcuts = (props: Props) => {
             },
           }}
           slidesPerView={1}
-          spaceBetween={10}
+          spaceBetween={5}
           freeMode={true}
           modules={[FreeMode, Pagination]}
           className="mySwiper"
         >
           {subProduct?.map((el, i) => {
             return (
-              <SwiperSlide key={i} style={{ scale: 0.9 }}>
+              <SwiperSlide key={i} style={{ scale: 0.9, margin: 0 }}>
                 <ProductCard data={el}></ProductCard>
               </SwiperSlide>
             );
