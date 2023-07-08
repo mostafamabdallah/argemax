@@ -42,22 +42,6 @@ SwiperCore.use([Navigation]);
 
 const products: Product[] = [
   {
-    name: "Mining",
-    image: Mining.src,
-    products: [],
-    url: "/mining",
-    type: "category",
-    hasSub: false,
-  },
-  {
-    name: "Fertilizers",
-    image: Fertilizers.src,
-    products: [],
-    url: "/fertilizers",
-    type: "category",
-    hasSub: false,
-  },
-  {
     name: "Animal feed products",
     image: Animal.src,
     products: [
@@ -90,17 +74,10 @@ const products: Product[] = [
     url: "/",
     type: "category",
   },
-
   {
     name: "Human feed products",
     image: Fruits.src,
     products: [
-      {
-        name: "Fruits & Vegetables ",
-        image: FruitsVegiies.src,
-        url: "/fruits-vegetables",
-        type: "sub",
-      },
       {
         name: "Sesame ",
         image: Sesame.src,
@@ -129,6 +106,25 @@ const products: Product[] = [
     url: "/",
     type: "category",
   },
+
+  {
+    name: "Fertilizers",
+    image: Fertilizers.src,
+    products: [],
+    url: "/fertilizers",
+    type: "category",
+    hasSub: false,
+  },
+  {
+    name: "Mining",
+    image: Mining.src,
+    products: [],
+    url: "/mining",
+    type: "category",
+    hasSub: false,
+  },
+
+
   {
     name: "Clinker & Cement",
     image: Clinker.src,
@@ -235,7 +231,7 @@ const Prodcuts = (props: Props) => {
         >
           {subProduct?.map((el, i) => {
             return (
-              <SwiperSlide key={i} style={{ scale: 0.9, margin: 0 }}>
+              <SwiperSlide className="justify-center" key={i} style={{ scale: 0.9, margin: 0 }}>
                 <ProductCard data={el}></ProductCard>
               </SwiperSlide>
             );

@@ -1,9 +1,6 @@
 "use client";
 import MainBanner from "@/components/MainBanner";
 import landscape from "../public/Home/Vision-&-Mission.jpg";
-
-import { motion } from "framer-motion";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -17,7 +14,7 @@ export default function Home() {
       {/* Banner */}
       <MainBanner></MainBanner>
       {/* About */}
-      <div className="container xl:px-20 flex flex-col py-20 px-5">
+      <div className="container xl:px-20 flex flex-col py-20 px-5" id="about">
         <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
           About US:
         </h2>
@@ -75,7 +72,7 @@ export default function Home() {
         </div>
       </div>
       {/* our services */}
-      <div className="container xl:px-20 flex flex-col py-10 px-5">
+      <div className="container xl:px-20 flex flex-col py-10 px-5" id="services">
         <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
           Our Services:
         </h2>

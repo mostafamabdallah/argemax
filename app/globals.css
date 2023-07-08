@@ -26,3 +26,11 @@ body{
 .swiper-button-next {
   color: #0b7b3b !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper-wrapper{
+  justify-content: center;
+}

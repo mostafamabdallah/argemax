@@ -32,7 +32,13 @@ const Navbar = (props: Props) => {
               <Link href={"/our-products"}>PRODUCTS</Link>
             </li>
             <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-              <Link href={"/our-products"}>ABOUT US</Link>
+              <a href={"/#about"}>ABOUT US</a>
+            </li>
+            <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
+              <a href={"/#services"}>SERVICES</a>
+            </li>
+            <li className="px-5 py-2 capitalize text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
+              <a href={"/#certificates"}>CERTIFICATES</a>
             </li>
             <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
               <Link href={"/contact-us"}>CONTACT US</Link>
