@@ -5,9 +5,96 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-type Props = {};
 
-const Navbar = (props: Props) => {
+type SubMenu = {
+  name: string;
+  products?: SubMenu[] | undefined;
+  url: string;
+  type?: string | undefined;
+  hasSub?: boolean | undefined;
+};
+
+const subMenu: SubMenu[] = [
+  {
+    name: "Animal feed products",
+    products: [
+      {
+        name: "Grass Products",
+        url: "/grass",
+        type: "sub",
+      },
+
+      {
+        name: "Sugar beet pulp pellets",
+        url: "/sbpp",
+        type: "sub",
+      },
+      {
+        name: "Hay Products",
+        url: "/hey-products",
+        type: "sub",
+      },
+      {
+        name: "Straw Products",
+        url: "/straw-products",
+        type: "sub",
+      },
+    ],
+    url: "/",
+    type: "category",
+  },
+  {
+    name: "Human feed products",
+    products: [
+      {
+        name: "Sesame ",
+        url: "/sesame",
+        type: "sub",
+      },
+      {
+        name: "Peanuts",
+        url: "/peanuts-amended",
+        type: "sub",
+      },
+      {
+        name: "Sunflower Seeds ",
+        url: "/sunflower-seeds",
+        type: "sub",
+      },
+      {
+        name: "Pumkin Seeds",
+        url: "/pumpkin-seeds",
+        type: "sub",
+      },
+    ],
+    url: "/",
+    type: "category",
+  },
+
+  {
+    name: "Fertilizers",
+    products: [],
+    url: "/fertilizers",
+    type: "category",
+    hasSub: false,
+  },
+  {
+    name: "Mining",
+    products: [],
+    url: "/mining",
+    type: "category",
+    hasSub: false,
+  },
+
+  {
+    name: "Clinker & Cement",
+    products: [],
+    url: "/clinker-cement",
+    type: "category",
+    hasSub: false,
+  },
+];
+const Navbar = () => {
   const [animate, setAnimate] = useState({
     opacity: 0,
     display: "none",
@@ -17,18 +104,20 @@ const Navbar = (props: Props) => {
   function callBackAnimate() {
     setAnimate({ opacity: 0, display: "flex", x: 1000 });
   }
+
+  const [active, setActive] = useState(false);
   return (
     <>
-      <div className="container  bg-white md:flex flex-row hidden xl:px-20 items-center justify-between py-5">
+      <div className="container  bg-white md:flex flex-row hidden xl:px-20 items-center justify-between py-5 ">
         <div className="logo md:w-[150px]">
           <img alt="argemax" className="w-full" src={logo.src}></img>
         </div>
-        <div className="flex w-fit ">
+        <div className="flex w-fit z-50">
           <ul className="w-full flex gap-2 justify-end items-center">
             <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
               <Link href={"/"}>HOME</Link>
             </li>
-            <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
+            <li className="px-5 py-2 relative text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
               <Link href={"/our-products"}>PRODUCTS</Link>
             </li>
             <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">

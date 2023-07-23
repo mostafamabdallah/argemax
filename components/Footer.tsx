@@ -4,6 +4,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -92,7 +93,8 @@ const Footer = (props: Props) => {
       </div>
       <div className="bg-white container xl:px-20 py-6">
         <p className="text-base text-gray-400 font-ITCAVANTGARDESTD">
-          AgreMax general trading LLC • Downloads
+          AgreMax general trading LLC •{" "}
+          {<Link href={"/downloads"}>Downloads</Link>}
         </p>
       </div>
     </div>

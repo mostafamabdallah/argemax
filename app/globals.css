@@ -30,7 +30,3 @@ body{
 html {
   scroll-behavior: smooth;
 }
-
-.swiper-wrapper{
-  justify-content: center;
-}
