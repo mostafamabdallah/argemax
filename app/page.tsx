@@ -21,20 +21,17 @@ export default function Home() {
           </h2>
           <div className="lg:p-5">
             <p className="text-xl font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
-              AgreMax is an Emirates, privately owned international trading
-              business founded in 2015.
+            “AgreMax is an Emirates-Egyptian, privately owned international business founded in 2015, member in GAFTA (Grain & Feed Trade Association) with GMP+ Feed Safety Assurance , ISO 9001, ISO 14001 & ISO 45001. 
+            AgreMax is also an official member of Agriculture Export Council .  
             </p>
             <p className="text-xl  font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
-              AgreMax has experienced a rapid and steady growth where our
-              principles managed their own business since 1979 in Fertilizers
-              business.{" "}
+            The journey started in 1979 by the principles who managed their own businesses with a long experience history since then in different sectors of Animal Feeds, Human Feeds, Fertilizers, and mining business. 
             </p>
             <p className="text-xl font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
-              AgreMax has an enormous impact throughout diversified commodities
-              and trading both in terms of products, markets and business
-              partners. The services that we offer as an accessory element to
-              our core product offer are as diversified as they are
-              comprehensive.{" "}
+            AgreMax supplies variety of Animal Feed range picked from the best Suppliers worldwide, and is considered the Number one Supplier of Sugar Beet Pulp Pellets, as it exports more than 50% of Egypt SBPP worldwide (more than 350000 MT annually) . AgreMax also supplies other Hay Products as Dehydrated ALFALFA & Oat Hay, Grass Products , Straw Products, Human Feeds as Peanuts, Pumpkin Seeds, Sunflower Seeds, Sesame , Fertilizers , Clinker & Cement. 
+            </p>
+            <p className="text-xl font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
+            AgreMax exports its products to more than 20 countries worldwide as United Kingdom, Ireland, China, Korea , Japan , Taiwan , Italy , Athens , Cyprus, USA, Poland , Morocco , Kuwait , Oman , UAE , Saudi Arabia , Qatar ,….. dealing with the best multinational shipping lines and keen to execute shipments on time according to high quality international standards 
             </p>
           </div>
         </div>
@@ -56,8 +53,7 @@ export default function Home() {
                 Vision
               </h2>
               <p className="text-xl font-ITCAVANTGARDESTD text-gray-500 py-5 text-justify">
-                To be a leader manufacturer in the fertilizers industry and
-                build our own brand.
+              “To be a leader manufacturer in the Animal Feed Industry, Human Feed Industry and Fertilizers Industry , for building our own Brands. 
               </p>
             </div>
             <div>

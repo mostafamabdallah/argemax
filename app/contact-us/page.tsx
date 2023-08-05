@@ -56,7 +56,7 @@ const page = (props: Props) => {
         </div>
         <div className="w-full flex flex-col lg:w-6/12">
           <h1 className="text-4xl text-white font-ITCAVANTGARDESTDBold">
-            Conatct Us
+            Conatct US
           </h1>
           <ContactForm></ContactForm>
         </div>

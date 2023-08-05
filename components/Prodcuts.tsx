@@ -4,6 +4,7 @@ import Fertilizers from "../public/Home/Fertilizers.jpg";
 import Mining from "../public/Home/Mining.jpg";
 import Clinker from "../public/Home/CLinker-&-Cemet.jpg";
 import Fruits from "../public/Home/Fruits-and-Vegitables.jpg";
+import HumanFeed from "../public/Home/Human-Feed.png";
 import "swiper/swiper-bundle.min.css";
 
 // sub categoreise
@@ -16,6 +17,7 @@ import Sesame from "../public/sub catergories/Sesame.jpg";
 import Sugar from "../public/sub catergories/Sugar-Beet-Pulp.jpg";
 import Sunflower from "../public/sub catergories/Sunflower-seeds.jpg";
 import straw from "../public/sub catergories/straw-Products.jpg";
+
 
 //
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,12 +47,7 @@ const products: Product[] = [
     name: "Animal feed products",
     image: Animal.src,
     products: [
-      {
-        name: "Grass Products",
-        image: GrassProducts.src,
-        url: "/grass",
-        type: "sub",
-      },
+
 
       {
         name: "Sugar beet pulp pellets",
@@ -70,20 +67,28 @@ const products: Product[] = [
         url: "/straw-products",
         type: "sub",
       },
+      {
+        name: "Grass Products",
+        image: GrassProducts.src,
+        url: "/grass",
+        type: "sub",
+      },
     ],
     url: "/",
     type: "category",
   },
   {
+    name: "Fertilizers",
+    image: Fertilizers.src,
+    products: [],
+    url: "/fertilizers",
+    type: "category",
+    hasSub: false,
+  },
+  {
     name: "Human feed products",
-    image: Fruits.src,
+    image: HumanFeed.src,
     products: [
-      {
-        name: "Sesame ",
-        image: Sesame.src,
-        url: "/sesame",
-        type: "sub",
-      },
       {
         name: "Peanuts",
         image: Peanuts.src,
@@ -96,24 +101,22 @@ const products: Product[] = [
         url: "/sunflower-seeds",
         type: "sub",
       },
+
       {
-        name: "Pumkin Seeds",
+        name: "Pumpkin Seeds",
         image: Pumkin.src,
         url: "/pumpkin-seeds",
+        type: "sub",
+      },
+      {
+        name: "Sesame ",
+        image: Sesame.src,
+        url: "/sesame",
         type: "sub",
       },
     ],
     url: "/",
     type: "category",
-  },
-
-  {
-    name: "Fertilizers",
-    image: Fertilizers.src,
-    products: [],
-    url: "/fertilizers",
-    type: "category",
-    hasSub: false,
   },
   {
     name: "Mining",
@@ -123,8 +126,6 @@ const products: Product[] = [
     type: "category",
     hasSub: false,
   },
-
-
   {
     name: "Clinker & Cement",
     image: Clinker.src,
@@ -149,7 +150,7 @@ const Prodcuts = (props: Props) => {
   useEffect(() => {}, [subProduct, animate]);
   return (
     <>
-      <div className="">
+      <div >
         <Swiper
           navigation={true}
           breakpoints={{
@@ -197,7 +198,7 @@ const Prodcuts = (props: Props) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: animate }}
         transition={{ duration: 2 }}
-        className="px-20"
+        className="px-20 products_gallary"
       >
         <Swiper
           navigation={true}
@@ -231,7 +232,7 @@ const Prodcuts = (props: Props) => {
         >
           {subProduct?.map((el, i) => {
             return (
-              <SwiperSlide className="justify-center" key={i} style={{ scale: 0.9, margin: 0 }}>
+              <SwiperSlide  key={i} style={{ scale: 0.9, margin: 0 ,justifyContent:"center" }}>
                 <ProductCard data={el}></ProductCard>
               </SwiperSlide>
             );

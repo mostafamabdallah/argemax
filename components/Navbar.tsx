@@ -108,7 +108,7 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   return (
     <>
-      <div className="container  bg-white md:flex flex-row hidden xl:px-20 items-center justify-between py-5 ">
+      <div className=" bg-white md:flex flex-row hidden xl:px-20 items-center justify-between py-5 fixed z-50 w-full  right-0 left-0 ">
         <div className="logo md:w-[150px]">
           <img alt="argemax" className="w-full" src={logo.src}></img>
         </div>
@@ -127,7 +127,7 @@ const Navbar = () => {
               <a href={"/#services"}>SERVICES</a>
             </li>
             <li className="px-5 py-2 capitalize text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-              <a href={"/#certificates"}>CERTIFICATES</a>
+              <a href={"/certificates"}>CERTIFICATES</a>
             </li>
             <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
               <Link href={"/contact-us"}>CONTACT US</Link>
