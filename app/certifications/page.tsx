@@ -17,8 +17,8 @@ const page = (props: Props) => {
           CERTIFICATES
         </h2>
           <img src={cer1.src} alt="" />
-          <img src={cer1.src} alt="" />
-          <img src={cer1.src} alt="" />
+          <img src={cer2.src} alt="" />
+          <img src={cer3.src} alt="" />
         </div>
       </div>
       <div className="w-full flex flex-col py-10">

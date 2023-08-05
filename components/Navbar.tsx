@@ -127,7 +127,7 @@ const Navbar = () => {
               <a href={"/#services"}>SERVICES</a>
             </li>
             <li className="px-5 py-2 capitalize text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
-              <a href={"/certificates"}>CERTIFICATES</a>
+              <Link href={"/certifications"}>CERTIFICATES</Link>
             </li>
             <li className="px-5 py-2 text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
               <Link href={"/contact-us"}>CONTACT US</Link>
