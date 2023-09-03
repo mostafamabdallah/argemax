@@ -20,7 +20,7 @@ const page = (props: Props) => {
           <h2 className="lg:text-7xl w-full text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary text-center">
             CERTIFICATES
           </h2>
-          <div className="flex mt-5">
+          <div className="flex mt-5 flex-wrap">
             <img className="w-full md:w-3/12 px-2" src={cer4.src} alt="" />
             <img className="w-full md:w-3/12 px-2" src={cer1.src} alt="" />
             <img className="w-full md:w-3/12 px-2" src={cer2.src} alt="" />

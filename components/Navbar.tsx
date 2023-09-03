@@ -108,8 +108,8 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   return (
     <>
-      <div className=" bg-white md:flex flex-row hidden xl:px-20 items-center justify-between py-5 fixed z-50 w-full  right-0 left-0 ">
-        <div className="logo md:w-[150px]">
+      <div className=" bg-white lg:flex flex-row hidden xl:px-20 items-center justify-between py-5 fixed z-50 w-full  right-0 left-0 ">
+        <div className="logo lg:w-[150px]">
           <img alt="argemax" className="w-full" src={logo.src}></img>
         </div>
         <div className="flex w-fit z-50">
@@ -136,7 +136,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <aside className="lg:w-[20%] 2xl:w-[20%] bg-primary  md:hidden flex relative z-[999999] ">
+      <aside className="lg:w-[20%] 2xl:w-[20%] bg-primary  lg:hidden flex relative z-[999999] ">
         <nav className="lg:hidden  w-full flex ">
           <div className=" mx-auto flex flex-row items-center justify-end fixed px-2  w-full p-5 ">
             <button

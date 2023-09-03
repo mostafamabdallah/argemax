@@ -9,7 +9,7 @@ const page = (props: Props) => {
   return (
     <div className="flex flex-col items-center justify-between bg-white">
       <div className={` bg-cover flex mt-20`}>
-        <div className="container h-full px-5  xl:px-20  flex  justify-center  gap-6">
+        <div className="container h-full px-5  xl:px-20  flex flex-wrap  justify-center  gap-6">
           <div className="w-full lg:flex-1">
             <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
               De-icing Salt:

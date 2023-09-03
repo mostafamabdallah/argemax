@@ -198,13 +198,13 @@ const Prodcuts = (props: Props) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: animate }}
         transition={{ duration: 2 }}
-        className="px-20 products_gallary"
+        className="px-5 md:px-20 products_gallary"
       >
         <Swiper
           navigation={true}
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 20,
             },
             768: {

@@ -45,7 +45,7 @@ const Page = (props: Props) => {
           </p>
         </div>
 
-        <div className="w-9/12"></div>
+        <div className="w-1/12 md:w-9/12"></div>
       </div>
       <div className="container xl:px-20 flex flex-col py-20 px-5">
         <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">

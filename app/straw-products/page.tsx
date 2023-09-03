@@ -26,12 +26,12 @@ const page = (props: Props) => {
           </p>
           <img className="w-full py-16" src={Fescue.src}></img>
 
-          <div className="flex flex-row flex-wrap gap-16 py-10">
-            <div className="flex-[2] flex flex-col">
+          <div className="flex flex-row flex-wrap  py-10">
+            <div className="w-full md:w-8/12 flex flex-col">
               <h2 className="text-5xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 Oat Hay:
               </h2>
-              <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 mt-8">
+              <p className="text-2xl font-ITCAVANTGARDESTDThin text-gray-800 mt-8 md:pr-10">
                 Oot (Avena sativa) hay is achieved by cutting the crop when the
                 grain is milk to soft dough stage. The crop is then sun-cured
                 until moisture is at a suitable level for the material to be
@@ -42,7 +42,7 @@ const page = (props: Props) => {
                 high-quality feed.
               </p>
             </div>
-            <div className="flex-[1]">
+            <div className="w-full md:w-4/12">
               <img className="w-full" src={Fescue2.src}></img>
             </div>
           </div>
