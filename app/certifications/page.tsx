@@ -21,10 +21,10 @@ const page = (props: Props) => {
             CERTIFICATES
           </h2>
           <div className="flex mt-5 flex-wrap">
-            <img className="w-full md:w-3/12 px-2" src={cer4.src} alt="" />
-            <img className="w-full md:w-3/12 px-2" src={cer1.src} alt="" />
-            <img className="w-full md:w-3/12 px-2" src={cer2.src} alt="" />
-            <img className="w-full md:w-3/12 px-2" src={cer3.src} alt="" />
+            {/* <img className="w-full md:w-3/12 px-2" src={cer4.src} alt="" /> */}
+            <img className="w-full md:w-4/12 px-2" src={cer1.src} alt="" />
+            <img className="w-full md:w-4/12 px-2" src={cer2.src} alt="" />
+            <img className="w-full md:w-4/12 px-2" src={cer3.src} alt="" />
           </div>
         </div>
 
@@ -37,9 +37,9 @@ const page = (props: Props) => {
               <li className=" text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
                 <img className="w-full " src={Gadta.src} alt="" />
               </li>
-              <li className=" relative text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
+              {/* <li className=" relative text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
                 <img className="w-full " src={GMP.src} alt="" />
-              </li>
+              </li> */}
               <li className=" text-primary font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-secondary text-sm">
                 <img className="w-full " src={ISO.src} alt="" />
               </li>

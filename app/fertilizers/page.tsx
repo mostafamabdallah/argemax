@@ -33,10 +33,10 @@ const page = (props: Props) => {
           <img className="w-full py-16" src={grass.src}></img>
 
           <div className="flex flex-row flex-wrap gap-16">
-            <div className="flex-[1]">
-              <img className="w-full" src={grass2.src}></img>
+            <div className="w-full lg:flex-[1]">
+              <img className="w-full " src={grass2.src}></img>
             </div>
-            <div className="flex-[2] flex flex-col">
+            <div className="w-full  lg:flex-[2] flex flex-col">
               <h2 className="lg:text-7xl  text-3xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
                 FERTILIZERS:
               </h2>

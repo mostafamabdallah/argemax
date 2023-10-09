@@ -206,6 +206,22 @@ const Navbar = () => {
                 >
                   <Link href={"/contact-us"}>CONTACT US</Link>
                 </li>
+                <li
+                  onClick={(e) => {
+                    callBackAnimate();
+                  }}
+                  className="px-5 py-2 text-white font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-black text-lg"
+                >
+                  <Link href={"/certifications"}>CERTIFICATES</Link>
+                </li>
+                <li
+                  onClick={(e) => {
+                    callBackAnimate();
+                  }}
+                  className="px-5 py-2 text-white font-bold font-ITCAVANTGARDESTD tracking-[0.2rem] hover:text-black text-lg"
+                >
+                  <a href={"/#services"}>SERVICES</a>
+                </li>
               </ul>
             </div>
           </motion.div>
