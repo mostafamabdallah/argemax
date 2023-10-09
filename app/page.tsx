@@ -21,7 +21,7 @@ export default function Home() {
           </h2>
           <div className="lg:p-5">
             <p className="text-xl font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
-            “AgreMax is an Emirates-Egyptian, privately owned international business founded in 2015, member in GAFTA (Grain & Feed Trade Association) with GMP+ Feed Safety Assurance , ISO 9001, ISO 14001 & ISO 45001. 
+            “AgreMax is an Emirates-Egyptian, privately owned international business founded in 2015, member in GAFTA (Grain & Feed Trade Association) with ISO 9001, ISO 14001 & ISO 45001. 
             AgreMax is also an official member of Agriculture Export Council .  
             </p>
             <p className="text-xl  font-ITCAVANTGARDESTD text-gray-500 py-4  leading-10">
