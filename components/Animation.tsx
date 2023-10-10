@@ -15,7 +15,6 @@ const Animation = ({ children }: Props) => {
     if (inView) {
       animation.start("visable");
     }
-    console.log(inView);
   }, [inView]);
   return (
     <div ref={ref}>
@@ -23,12 +22,10 @@ const Animation = ({ children }: Props) => {
         variants={{
           hidden: {
             opacity: 0,
-            y: 200,
           },
 
           visable: {
             opacity: 1,
-            y: 0,
           },
         }}
         transition={{
