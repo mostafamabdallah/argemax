@@ -15,7 +15,7 @@ export default function Home() {
       <MainBanner></MainBanner>
       {/* About */}
       <Animation>
-        <div className="container xl:px-20 flex flex-col py-20 px-5" id="about">
+        <div className="container xl:px-20 flex flex-col py-28 px-5" id="about">
           <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
             About US:
           </h2>
@@ -77,7 +77,7 @@ export default function Home() {
       {/* our services */}
       <Animation>
         <div
-          className="container xl:px-20 flex flex-col py-10 px-5"
+          className="container xl:px-20 flex flex-col py-24 px-5"
           id="services"
         >
           <h2 className="lg:text-6xl text-4xl font-ITCAVANTGARDESTDBold font-extrabold text-primary">
